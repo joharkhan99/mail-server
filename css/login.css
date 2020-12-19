@@ -1,0 +1,98 @@
+body{
+  background-color: rgb(13,17,23);
+  color: rgb(139,148,158);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1) !important;
+}
+.title{
+  text-align: center;
+}
+.title h1{
+  font-size: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-font-smooth: 20em !important;
+}
+.title hr{
+  border: 1px solid rgb(18, 22, 31);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container label{
+  display: block;
+  color: rgb(76, 82, 87);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+form{
+  padding: 50px;
+}
+input[name='email'],input[name='password']{
+padding: 10px;
+padding-top: 8px;
+padding-bottom: 8px;
+border: 1px solid rgba(30, 144, 255,0.05);
+border-radius: 3px;
+width: 110%;
+outline: none;
+transition: box-shadow .4s, border .4s;
+background-color: rgb(22, 27, 34);
+color: rgb(102, 110, 116);
+font-size: 12px;
+}
+input[name='email']:focus, input[name='password']:focus{
+  /* box-shadow: 0px 0px 0px 3px rgba(30, 144, 255,0.04); */
+  border: 1px solid rgba(30, 144, 255,0.15);
+}
+input[name='email']::placeholder,input[name='password']::placeholder{
+  color: rgb(73, 73, 73);
+}
+input[name='submit']{
+  text-align: center;
+  margin-left: 49px;
+  padding: 7px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 60%;
+  display: block;
+  background-color: rgb(12, 61, 109);
+  font-weight: bold;
+  color: rgb(144, 152, 160);
+  border: 1px solid rgba(12, 57, 102, 0.3);
+  border-radius: 3px;
+  transition: all .5s;
+  outline: none;
+}
+input[name='submit']:hover{
+  box-shadow: 0px 0px 0px 3px rgba(30, 144, 255,0.1);
+}
+input[name='submit']:active{
+  transform: scale(0.9);
+}
+.error{
+  color: rgb(215,61,66);
+  transition: all .5s;
+  font-size: 11px;
+  margin-top: 0;
+  padding-top: 0;
+  word-spacing: -1px;
+  display: block;
+}
+.message{
+  text-align: center;
+}
+
+.fa-eye-slash,.fa-eye{
+  font-size: 10px;
+  cursor: pointer;
+  color: rgb(67, 73, 77);
+}
+
+
+/* @media only screen and (min-width: 800px){
+} */
+

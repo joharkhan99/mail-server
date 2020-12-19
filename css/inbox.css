@@ -1,0 +1,857 @@
+* {
+  scroll-behavior: smooth;
+}
+
+/* scroll bar */
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: rgb(22, 27, 34);
+  height: 10px !important;
+}
+
+/* ::-webkit-scrollbar-button {
+  width: 50px;
+  height: 250px;
+} */
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: rgb(29, 36, 49);
+  border-radius: 10px;
+  height: 10px !important;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(31, 39, 53);
+}
+
+/* scroll bar end */
+
+body {
+  background-color: rgb(13, 17, 23);
+  color: rgb(70, 81, 98);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* top bar */
+
+.top-bar {
+  background-color: rgb(22, 27, 34);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.inbox-logo {
+  cursor: pointer;
+  text-align: center !important;
+}
+
+.bars {
+  font-size: 20px;
+  cursor: pointer;
+  float: left;
+  margin-top: 13px;
+  margin-left: 5px;
+  transition: all .3s;
+}
+
+.bars:active {
+  transform: scale(0.9);
+}
+
+.inbox-logo img {
+  width: 10%;
+}
+
+/* tob bar end */
+
+/* The side navigation menu */
+
+nav .sidenav {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  height: 100%;
+  background-color: rgb(22, 27, 34);
+  overflow-x: hidden;
+  padding-top: 30px;
+  transition: 0.5s;
+}
+
+/* The navigation menu links */
+
+.sidenav a {
+  padding: 5px 5px 5px 10px;
+  margin-right: 3px;
+  text-decoration: none;
+  font-size: 14px;
+  color: rgb(139, 148, 158);
+  display: block;
+  transition: 0.3s;
+  font-size: 12px;
+  text-shadow: 0px 0px 1px;
+  margin-bottom: 3px;
+}
+
+.sidenav a i {
+  padding-right: 10px;
+  color: rgb(104, 125, 150);
+}
+
+.sidenav a:active {
+  transform: scale(0.9);
+}
+
+.sidenav a:hover {
+  color: rgb(207, 204, 204);
+  background-color: rgb(27, 32, 41);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.side-line {
+  border: 1px solid rgb(18, 22, 28);
+}
+
+.active-link {
+  background-color: rgb(34, 40, 51);
+  border-top-right-radius: 20px;
+  padding-bottom: 6px;
+  border-bottom-right-radius: 20px;
+  color: rgb(214, 213, 213) !important;
+}
+
+/* container */
+
+.container {
+  padding-left: 0%;
+  padding-right: 5px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 1.5px;
+  color: rgb(122, 147, 140);
+}
+
+/* container end */
+
+/* logout btn */
+
+.sidenav form input {
+  border: none;
+  outline: none;
+  background-color: rgb(66, 127, 237);
+  color: #cfcdcd;
+  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 85%;
+  border-radius: 3px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all .5s;
+}
+
+.sidenav form {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 100px;
+}
+
+.sidenav form input:hover {
+  background-color: rgb(61, 113, 209);
+}
+
+.sidenav form input:active {
+  box-shadow: 0px 0px 0px 5px rgba(46, 87, 161, 0.1);
+  transform: scale(0.97);
+}
+
+/* logout btn end */
+
+/* table */
+
+.inbox-table {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  background-color: rgb(20, 25, 34);
+  /* width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px; */
+  padding-bottom: 15px;
+  width: 95%;
+  margin-left: 10px;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+.inbox-table table {
+  border-collapse: collapse;
+  width: 100%;
+  border-top: 1px solid rgb(22, 27, 38);
+}
+
+td {
+  padding-bottom: 8px;
+  padding-right: 0;
+  padding-top: 8px;
+  padding-left: 0px;
+  border-bottom: 1px solid rgb(25, 31, 43);
+  word-break: break-all;
+  font-size: 11.5px;
+}
+
+tr {
+  transition: background-color .5s, transform .3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+tr:hover {
+  background-color: rgb(27, 32, 41);
+  transform: scale(1.05);
+}
+
+.check {
+  /* vertical-align: text-top; */
+  vertical-align: middle;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all .4s;
+  margin-right: 5px;
+}
+
+.box span {
+  border-right: 2px solid rgb(27, 34, 46);
+  margin-right: 10px;
+}
+
+.check:hover {
+  opacity: 0.8;
+}
+
+.box {
+  border-radius: 3px;
+}
+
+.email-name {
+  color: rgb(89, 103, 124);
+  font-weight: 700;
+}
+
+.email-subj {
+  font-weight: 500;
+  word-spacing: -2px;
+  color: rgb(70, 81, 97);
+  padding-left: 50px;
+}
+
+.email-date {
+  font-weight: 500;
+  color: rgb(39, 49, 67);
+}
+
+.toemail {
+  font-weight: 400;
+}
+
+/* table end */
+
+/* card for compose */
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field input, textarea {
+  padding: 8px;
+  width: 90%;
+  background-color: rgb(19, 24, 33);
+  border: none;
+  outline: none;
+  color: rgb(70, 81, 98);
+  border-radius: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  transition: all .3s;
+  border: 1px solid rgba(137, 175, 245, 0.01);
+  box-shadow: 0px 0px 5px rgb(14, 17, 24);
+  white-space: pre-wrap;
+}
+
+.input-field input::placeholder, textarea::placeholder {
+  color: rgb(56, 65, 85);
+  text-shadow: 0px 0px 1px rgb(19, 24, 33);
+}
+
+.input-field input:focus, textarea:focus {
+  /* box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.05); */
+  border: 1px solid rgba(155, 190, 255, 0.1);
+}
+
+.card input[type='submit'] {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  background-color: rgb(66, 127, 237);
+  border: 1px solid rgb(11, 24, 46);
+  border-radius: 4px;
+  color: #cfcdcd;
+  transition: all .3s;
+  outline: none;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.card input[name="save"] {
+  display: block;
+  margin-right: 50px;
+  float: right;
+  width: 20%;
+  text-align: center;
+  background-color: rgba(66, 127, 237, 0.1);
+  border: 1px solid rgba(66, 127, 237, 0.05);
+}
+
+.card input[name="save"]:hover {
+  background-color: rgba(66, 127, 237, 0.12) !important;
+}
+
+.card input[type='submit']:hover {
+  background-color: rgb(54, 107, 206);
+  width: 22%;
+}
+
+.card input[type='submit']:active {
+  transform: scale(0.97);
+}
+
+.error {
+  color: rgb(215, 61, 66);
+  transition: all .5s;
+  font-size: 11px;
+  margin-top: 0;
+  padding-top: 0;
+  word-spacing: -1px;
+  display: block;
+}
+
+.error-border {
+  border: 1px solid rgba(238, 48, 48, 0.14) !important;
+}
+
+/* card for compose end */
+
+/* alert */
+
+.alert {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  /* color: #fff; */
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px 25px;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+}
+
+.alert--success {
+  /* background-color: #1ca059; */
+  background-color: rgb(183, 243, 161);
+  color: rgb(43, 84, 44);
+}
+
+.alert--error {
+  /* background-color: #c43f3c; */
+  background-color: #f3cdcd;
+  color: rgb(169, 68, 66);
+}
+
+.message {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: rgba(11, 216, 103,0.1); */
+  /* background-color: rgba(11, 216, 137, 0.08); */
+  padding-top: 0px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 2px;
+  text-align: center;
+  color: rgba(11, 216, 137, 0.3);
+  margin-bottom: 20px;
+  transition: display .4s;
+}
+
+/* alert end */
+
+/* view email */
+
+.viewEmail {
+  margin-top: 100px;
+}
+
+.viewEmail h1 {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: none;
+  text-shadow: none;
+  margin-bottom: 20px;
+  color: rgb(99, 117, 126);
+  line-height: 28px;
+  padding-left: 57px;
+}
+
+.sender-info {
+  margin-left: 10px;
+}
+
+.sender-img {
+  display: inline;
+  vertical-align: middle;
+}
+
+.sender-img img {
+  border-radius: 50%;
+  opacity: 0.8;
+  width: 40px;
+  box-shadow: 0px 0px 0px 3px rgba(122, 147, 140, 0.1);
+}
+
+.sender-name {
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(77, 91, 99);
+}
+
+.sender-name small {
+  font-size: 11px;
+  text-transform: none;
+  color: rgb(74, 74, 94);
+}
+
+.sender-body {
+  padding-left: 55px;
+  padding-right: 81px;
+  padding-top: 0px;
+  text-align: justify;
+  margin-top: -10px;
+  white-space: pre-line;
+}
+
+.sender-date {
+  float: right;
+  padding-right: 40px;
+  color: rgb(74, 74, 94);
+  font-size: 12px;
+}
+
+/* view email end */
+
+/* delete icon, save icon */
+
+.delete-icon, .save-icon {
+  margin-left: 10px;
+  padding-right: 0px;
+  margin-right: 0px;
+  visibility: hidden;
+  text-decoration: none;
+  filter: drop-shadow(0px 0px 1px rgba(161, 46, 46, 0.1));
+  color: #692120;
+  display: inline-block;
+  transition: transform .3s;
+}
+
+.save-icon {
+  visibility: visible;
+  color: #205669;
+}
+
+tr:hover {
+  padding-right: 0px;
+}
+
+tr:hover .delete-icon, tr:hover .save-icon {
+  visibility: visible;
+}
+
+.delete-icon:active, .save-icon:active {
+  transform: scale(0.9);
+}
+
+/* delete icon, save icon end */
+
+/* pager */
+
+.pager {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pager li {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.pager li a {
+  color: rgb(70, 81, 97);
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.pager li a:hover {
+  background-color: rgb(22, 29, 41);
+}
+
+.pager li .active_link {
+  color: rgb(104, 125, 150) !important;
+  background-color: rgb(27, 34, 46) !important;
+}
+
+/* pager end */
+
+/* bulk options */
+
+.select-emails {
+  margin-bottom: 10px;
+}
+
+.select-emails input {
+  vertical-align: middle;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all .4s;
+  margin-right: 5px;
+}
+
+.select-emails input:hover {
+  opacity: 0.8;
+}
+
+.select-emails select {
+  background: transparent;
+  color: rgb(88, 106, 128);
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 4px;
+  transition: all .4s;
+  border: 1px solid rgb(25, 31, 43);
+}
+
+.select-emails select option {
+  background-color: rgb(20, 25, 34) !important;
+  border-radius: 5px !important;
+  color: rgb(88, 106, 128) !important;
+}
+
+.select-emails select:focus {
+  border: 1px solid rgb(30, 37, 51);
+}
+
+.select-emails .side-line {
+  border: 1px solid rgb(25, 31, 39);
+}
+
+.select-emails input[type="submit"] {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: none;
+  background-color: steelblue;
+  border: 1px solid steelblue;
+  border-radius: 3px;
+  opacity: .5;
+}
+
+.select-emails input[type="submit"]:hover {
+  opacity: .7;
+}
+
+.select-emails input[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+/* bulk options end */
+
+/* user pic */
+
+.user-logo {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px !important;
+  width: 5% !important;
+  border-radius: 50%;
+  opacity: .8;
+  /* box-shadow: 0px 0px 0px 5px rgba(122, 147, 140, 0.3); */
+  cursor: pointer;
+  transition: opacity .4s, box-shadow .3s;
+  border: 2px solid rgb(72, 89, 114);
+}
+
+.user-logo:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 0px 5px rgba(70, 130, 180, 0.2);
+}
+
+.user-logo:active {
+  box-shadow: 0px 0px 0px 2px rgba(122, 147, 140, 0.3);
+}
+
+/* user pic end */
+
+/* profile page */
+
+.profile-page-div {
+  margin-top: 50px;
+}
+
+.profile-img-div {
+  width: 15%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: right;
+}
+
+.profile-img-div img {
+  width: 97%;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: opacity .5s;
+  border: 5px solid rgb(24, 36, 53);
+}
+
+.profile-img-div img:hover {
+  opacity: 1;
+}
+
+.profile-img-div input {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  margin-bottom: 4px;
+  border-radius: 3px;
+  border: 1px solid rgb(38, 48, 65);
+  transition: all .3s;
+  padding: 0px;
+  background: rgb(38, 48, 65);
+  color: rgb(103, 117, 143) !important;
+  outline: none;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.profile-img-div input[type='file'] {
+  opacity: .7;
+}
+
+.profile-img-div input[type='submit'] {
+  background-color: none !important;
+  padding: 3px;
+}
+
+.profile-img-div input[type='submit']:hover {
+  border: 1px solid rgb(47, 59, 80);
+}
+
+.profile-img-div input[type='submit']:active {
+  transform: scale(0.98);
+}
+
+.profile-div {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-field {
+  padding-left: 20px !important;
+}
+
+.info-field input {
+  text-align: justify;
+  text-indent: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: rgb(70, 81, 97);
+  font-size: 12px;
+  border: none;
+  border-radius: 3px;
+}
+
+.info-field label {
+  font-size: 11px;
+  text-transform: capitalize;
+  color: rgb(90, 107, 102);
+}
+
+.profile-div fieldset {
+  color: rgb(113, 135, 130);
+  font-weight: 500;
+  border: none;
+  text-transform: uppercase;
+  border-top: 1px solid rgb(32, 37, 44);
+  border-left: 1px solid rgb(32, 37, 44);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.password-div {
+  margin-top: 20px;
+}
+
+.field .pass-eye {
+  font-size: 10px;
+  cursor: pointer;
+  color: rgb(62, 72, 77);
+}
+
+.password-div input {
+  background-color: rgb(32, 40, 54);
+  color: rgb(110, 135, 130);
+  outline: none;
+  width: 50%;
+  display: block;
+  padding: 5px;
+  margin-top: 5px;
+  text-indent: 2px;
+  transition: all .4s;
+  border: 1px solid transparent;
+}
+
+.password-div input:focus {
+  border-bottom: 1px solid rgb(51, 62, 84);
+}
+
+.password-div input::placeholder {
+  color: rgb(71, 82, 100);
+}
+
+.field input[type="submit"] {
+  text-align: center;
+  width: 20%;
+  cursor: pointer;
+  background-color: rgb(38, 48, 65);
+  border: 1px solid rgb(38, 48, 65);
+  color: rgb(93, 117, 133);
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 7px;
+  border-radius: 3px;
+  transition: all .4s;
+  outline: none;
+  margin-top: 20px;
+}
+
+.field input[type="submit"]:hover {
+  border: 1px solid rgb(58, 73, 99);
+}
+
+.field input[type="submit"]:active {
+  transform: scale(0.9);
+}
+
+/* profile page end */
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    padding-left: 12%;
+  }
+  nav .sidenav {
+    padding-top: 60px;
+    width: 130px !important;
+    top: 6% !important;
+  }
+  .bars {
+    display: none;
+  }
+  td {
+    font-size: 12.5px;
+  }
+  .box span {
+    margin-right: 0;
+  }
+  .inbox-logo img {
+    width: 5%;
+  }
+  .check {
+    vertical-align: text-top;
+  }
+  .inbox-table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  .sidenav form {
+    bottom: 120px;
+  }
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 20px;
+  }
+  .user-logo {
+    width: 2.5% !important;
+    margin-top: 7px;
+  }
+  .profile-div {
+    width: 50% !important;
+  }
+}
