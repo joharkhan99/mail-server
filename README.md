@@ -1,1 +1,19 @@
 # mail-server
+
+### Features
+
+- Compose an email.
+- Send an email
+- Receive an email
+- Saving an email in the form of draft
+- Showing the detail of the received mail
+- Saving the email ids in contact list
+- Secured by password
+- Recovery of the password
+- Profile page
+- Delete Emails
+- Star/Unstar emails
+- Bulk Selection
+*And More*
+
+## *Feel Free To Copy Or Modify. 💕💕*
