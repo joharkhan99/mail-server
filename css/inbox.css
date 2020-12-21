@@ -808,6 +808,90 @@ tr:hover .delete-icon, tr:hover .save-icon {
 
 /* profile page end */
 
+/* seacrh input */
+
+.inbox-table .search-field {
+  /* float: right; */
+  opacity: 0.7 !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgb(34, 60, 71);
+  border-radius: 3px;
+  color: rgb(88, 106, 104);
+  padding-left: 5px;
+  margin-right: 2px;
+  width: 40%;
+  transition: all .3s;
+}
+
+.inbox-table .search-field:focus {
+  box-shadow: 0px 0px 0px 2px rgba(70, 130, 180, 0.1);
+  border: 1px solid rgb(20, 25, 34);
+}
+
+.inbox-table .search-field::placeholder {
+  color: rgb(59, 80, 77);
+}
+
+.inbox-table .search-form {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.inbox-table button {
+  /* background-color: rgb(34, 58, 80); */
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1px;
+  transition: all .3s;
+  padding-left: 1px;
+  /* margin-left: -30px; */
+  padding-right: 15px;
+  text-shadow: 0px 0px 2px;
+  border: 1px solid transparent;
+  color: rgb(93, 126, 122);
+  border-radius: 2px;
+  font-size: 18px;
+  outline: none;
+}
+
+.inbox-table button i {
+  vertical-align: middle;
+}
+
+.inbox-table button:hover {
+  color: rgb(111, 150, 145);
+}
+
+.inbox-table button:active {
+  transform: scale(0.95);
+}
+
+/* seacrh input end */
+
+/* speaker */
+
+.speaker {
+  padding-left: 55px;
+  font-size: 12px;
+  word-spacing: 6px;
+}
+
+.speaker i {
+  cursor: pointer;
+  color: #184150;
+  transition: all .3s;
+}
+
+.speaker i:active {
+  transform: scale(0.9);
+}
+
+/* speaker end */
+
 @media only screen and (min-width: 1000px) {
   .container {
     padding-left: 12%;
