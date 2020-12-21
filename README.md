@@ -14,6 +14,9 @@
 - Delete Emails
 - Star/Unstar emails
 - Bulk Selection
+- Reading an Email using text to speech
+- Login/logout/registration
+
 *And More*
 
 ## *Feel Free To Copy Or Modify. 💕💕*
